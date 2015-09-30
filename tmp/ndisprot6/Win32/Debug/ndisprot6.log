@@ -1,0 +1,24 @@
+﻿Build started 20. 9. 2015 21:40:01.
+     1>Project "D:\Konference\HackerFest 2015\ndisprot6\ndisprot6.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.. /I. /I..\include /I"D:\Konference\HackerFest 2015\tmp\ndisprot6\Win32\Debug\\" /Zi /nologo /W4 /WX /Od /Oi /Oy- /D NDIS_WDM=1 /D NDIS60=1 /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D DBG=1 /D NDIS_WDM=1 /D NDIS620=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Fo"D:\Konference\HackerFest 2015\tmp\ndisprot6\Win32\Debug\\" /Fd"D:\Konference\HackerFest 2015\tmp\ndisprot6\Win32\Debug\vc120.pdb" /Gz /wd4748 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /wd4201 /wd4214 /FI"C:\Program Files (x86)\Windows Kits\8.1\Include\Shared\warning.h" /analyze- /errorReport:prompt /kernel -cbstring /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ recv.c
+         recv.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Konference\HackerFest 2015\bin\Win32\Debug\ndisprot6.sys" /VERSION:"6.3" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\Konference\HackerFest 2015\lib\Win32\Debug" /LIBPATH:"D:\Konference\HackerFest 2015\lib\Win32" /LIBPATH:..\lib\Win32\Debug /LIBPATH:..\lib\Win32 /WX /SECTION:"INIT,d" ndis.lib wdmsec.lib "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\memcmp.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\BufferOverflowK.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\hal.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\wmilib.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\ndis.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"D:\Konference\HackerFest 2015\bin\Win32\Debug\ndisprot6.pdb" /SUBSYSTEM:NATIVE,"6.01" /Driver /OPT:REF /OPT:ICF /ENTRY:"GsDriverEntry@8" /RELEASE /IMPLIB:"D:\Konference\HackerFest 2015\bin\Win32\Debug\ndisprot6.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X86 /PROFILE /INTEGRITYCHECK /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 /osversion:6.3 /pdbcompress /debugtype:pdata "D:\Konference\HackerFest 2015\tmp\ndisprot6\Win32\Debug\ndisprot.res"
+         "D:\Konference\HackerFest 2015\tmp\ndisprot6\Win32\Debug\debug.obj"
+         "D:\Konference\HackerFest 2015\tmp\ndisprot6\Win32\Debug\excallbk.obj"
+         "D:\Konference\HackerFest 2015\tmp\ndisprot6\Win32\Debug\ndisbind.obj"
+         "D:\Konference\HackerFest 2015\tmp\ndisprot6\Win32\Debug\ntdisp.obj"
+         "D:\Konference\HackerFest 2015\tmp\ndisprot6\Win32\Debug\recv.obj"
+         "D:\Konference\HackerFest 2015\tmp\ndisprot6\Win32\Debug\send.obj"
+         ndisprot6.vcxproj -> D:\Konference\HackerFest 2015\bin\Win32\Debug\ndisprot6.sys
+       DriverTestSign:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\signtool.exe sign /ph /sha1 "A4055C364C1F9F62A5F3E39A1FA4F04335568FA1" 
+         Done Adding Additional Store
+         Successfully signed: D:\Konference\HackerFest 2015\bin\Win32\Debug\ndisprot6.sys
+         
+     1>Done Building Project "D:\Konference\HackerFest 2015\ndisprot6\ndisprot6.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.09

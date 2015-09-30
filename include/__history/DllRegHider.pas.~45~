@@ -1,0 +1,91 @@
+Unit DllRegHider;
+
+Interface
+
+{$MINENUMSIZE 4}
+
+Uses
+  Windows;
+
+Type
+  _ERegistryValueOpMode = (
+	  rvdmDeny,
+	  rvdmAllow,
+    rvdmPretend);
+  ERegistryValueOpMode = _ERegistryValueOpMode;
+  PERegistryValueOpMode = ^ERegistryValueOpMode;
+
+  _REGHIDER_HIDDEN_KEY_RECORD = Record
+	  KeyName:PWideChar;
+    end;
+  REGHIDER_HIDDEN_KEY_RECORD = _REGHIDER_HIDDEN_KEY_RECORD;
+  PREGHIDER_HIDDEN_KEY_RECORD = ^REGHIDER_HIDDEN_KEY_RECORD;
+
+  _REGHIDER_PSEUDO_VALUE_RECORD = Record
+	  KeyName : PWideChar;
+	  ValueName : PWideChar;
+	  ValueType : Cardinal;
+	  Data : Pointer;
+	  DataLength : Cardinal;
+	  ChangeMode : ERegistryValueOpMode;
+	  DeleteMode : ERegistryValueOpMode;
+    ProcessName : PWideChar;
+    end;
+  REGHIDER_PSEUDO_VALUE_RECORD = _REGHIDER_PSEUDO_VALUE_RECORD;
+  PREGHIDER_PSEUDO_VALUE_RECORD = ^REGHIDER_PSEUDO_VALUE_RECORD;
+
+  REGHIDER_HIDDEN_KEY_CALLBACK = Function (Var ARecord:REGHIDER_HIDDEN_KEY_RECORD; AContext:Pointer):LongBool; StdCall;
+  REGHIDER_PSEUDO_VALUE_CALLBACK = Function (Var ARecord:REGHIDER_PSEUDO_VALUE_RECORD; AContext:Pointer):LongBool; StdCall;
+
+
+
+Function HiddenKeyAdd(AKeyName:PWideChar):Cardinal; StdCall;
+Function HiddenKeyDelete(AKeyName:PWideChar):Cardinal; StdCall;
+Function HiddenKeysEnum(ACallback:REGHIDER_HIDDEN_KEY_CALLBACK; AContext:Pointer):Cardinal; StdCall;
+
+Function PseudoValueAdd(AKeyName:PWideChar; AValueName:PWideChar; AValueType:Cardinal; AData:Pointer; ADataLength:Cardinal; ADeleteMode:ERegistryValueOpMode; AChangeMode:ERegistryValueOpMode; AProcessName:PWideChar):Cardinal; StdCall;
+Function PseudoValueDelete(AKeyName:PWideChar; AValueName:PWideChar):Cardinal; StdCall;
+Function PseudoValuesEnum(ACallback:REGHIDER_PSEUDO_VALUE_CALLBACK; AContext:Pointer):Cardinal; StdCall;
+Function PseudoValueSet(AKeyName:PWideChar; AValueName:PWideChar; AValueType:Cardinal; AData:Pointer; ADataLength:Cardinal; ADeleteMode:ERegistryValueOpMode; AChangeMode:ERegistryValueOpMode; AProcessName:PWideChar):Cardinal; StdCall;
+
+Function Init:Cardinal; StdCall;
+Procedure Finit; StdCall;
+
+
+Implementation
+
+Const
+  LibraryName = 'reghider.dll';
+
+{$IFNDEF WIN32}
+
+Function HiddenKeyAdd(AKeyName:PWideChar):Cardinal; StdCall; External LibraryName;
+Function HiddenKeyDelete(AKeyName:PWideChar):Cardinal; StdCall; External LibraryName;
+Function HiddenKeysEnum(ACallback:REGHIDER_HIDDEN_KEY_CALLBACK; AContext:Pointer):Cardinal; StdCall; External LibraryName;
+
+Function PseudoValueAdd(AKeyName:PWideChar; AValueName:PWideChar; AValueType:Cardinal; AData:Pointer; ADataLength:Cardinal; ADeleteMode:ERegistryValueOpMode; AChangeMode:ERegistryValueOpMode; AProcessName:PWideChar):Cardinal; StdCall; External LibraryName;
+Function PseudoValueDelete(AKeyName:PWideChar; AValueName:PWideChar):Cardinal; StdCall; External LibraryName;
+Function PseudoValuesEnum(ACallback:REGHIDER_PSEUDO_VALUE_CALLBACK; AContext:Pointer):Cardinal; StdCall; External LibraryName;
+Function PseudoValueSet(AKeyName:PWideChar; AValueName:PWideChar; AValueType:Cardinal; AData:Pointer; ADataLength:Cardinal; ADeleteMode:ERegistryValueOpMode; AChangeMode:ERegistryValueOpMode; AProcessName:PWideChar):Cardinal; StdCall; External LibraryName;
+
+Function Init:Cardinal; StdCall; External LibraryName;
+Procedure Finit; StdCall; External LibraryName;
+
+{$ELSE}
+
+Function HiddenKeyAdd(AKeyName:PWideChar):Cardinal; StdCall; External LibraryName name '_HiddenKeyAdd@4';
+Function HiddenKeyDelete(AKeyName:PWideChar):Cardinal; StdCall; External LibraryName name '_HiddenKeyDelete@4';
+Function HiddenKeysEnum(ACallback:REGHIDER_HIDDEN_KEY_CALLBACK; AContext:Pointer):Cardinal; StdCall; External LibraryName name '_HiddenKeysEnum@8';
+
+Function PseudoValueAdd(AKeyName:PWideChar; AValueName:PWideChar; AValueType:Cardinal; AData:Pointer; ADataLength:Cardinal; ADeleteMode:ERegistryValueOpMode; AChangeMode:ERegistryValueOpMode; AProcessName:PWideChar):Cardinal; StdCall; External LibraryName name '_PseudoValueAdd@32';
+Function PseudoValueDelete(AKeyName:PWideChar; AValueName:PWideChar):Cardinal; StdCall; External LibraryName name '_PseudoValueDelete@8';
+Function PseudoValuesEnum(ACallback:REGHIDER_PSEUDO_VALUE_CALLBACK; AContext:Pointer):Cardinal; StdCall; External LibraryName name '_PseudoValuesEnum@8';
+Function PseudoValueSet(AKeyName:PWideChar; AValueName:PWideChar; AValueType:Cardinal; AData:Pointer; ADataLengthCardinal: ADeleteMode:ERegistryValueOpMode; AChangeMode:ERegistryValueOpMode; AProcessName:PWideChar):Cardinal; StdCall; External LibraryName name '_PseudoValueSet@32';
+
+Function Init:Cardinal; StdCall; External LibraryName name '_Init@0';
+Procedure Finit; StdCall; External LibraryName name '_Finit@0';
+
+{$ENDIF}
+
+End.
+

@@ -1,0 +1,11 @@
+﻿Build started 29. 9. 2015 23:06:22.
+     1>Project "D:\Konference\HackerFest 2015\dllreghider\dllreghider.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Konference\HackerFest 2015\bin\Win32\Debug\dllreghider.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Konference\HackerFest 2015\lib\Win32\Debug" /LIBPATH:"D:\Konference\HackerFest 2015\lib\Win32" /LIBPATH:..\lib\Win32\Debug /LIBPATH:..\lib\Win32 libreghider.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Konference\HackerFest 2015\bin\Win32\Debug\dllreghider.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Konference\HackerFest 2015\bin\Win32\Debug\dllreghider.lib" /MACHINE:X86 /DLL "D:\Konference\HackerFest 2015\tmp\dllreghider\Win32\Debug\dllreghider.obj"
+            Creating library D:\Konference\HackerFest 2015\bin\Win32\Debug\dllreghider.lib and object D:\Konference\HackerFest 2015\bin\Win32\Debug\dllreghider.exp
+         dllreghider.vcxproj -> D:\Konference\HackerFest 2015\bin\Win32\Debug\dllreghider.dll
+     1>Done Building Project "D:\Konference\HackerFest 2015\dllreghider\dllreghider.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.48

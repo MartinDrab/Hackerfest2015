@@ -1,0 +1,13 @@
+﻿Build started 29. 9. 2015 23:06:19.
+     1>Project "D:\Konference\HackerFest 2015\libreghider\libreghider.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\Konference\HackerFest 2015\tmp\libreghider\Win32\Debug\\" /Fd"D:\Konference\HackerFest 2015\tmp\libreghider\Win32\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt libreghider.c
+         libreghider.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\Konference\HackerFest 2015\lib\Win32\Debug\libreghider.lib" /NOLOGO "D:\Konference\HackerFest 2015\tmp\libreghider\Win32\Debug\libreghider.obj"
+         libreghider.vcxproj -> D:\Konference\HackerFest 2015\lib\Win32\Debug\libreghider.lib
+     1>Done Building Project "D:\Konference\HackerFest 2015\libreghider\libreghider.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.88

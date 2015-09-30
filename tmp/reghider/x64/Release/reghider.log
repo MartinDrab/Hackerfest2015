@@ -1,0 +1,30 @@
+﻿Build started 30. 9. 2015 19:43:15.
+     1>Project "D:\Konference\HackerFest 2015\reghider\reghider.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I..\include /I..\include /I"D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\\" /Zi /nologo /W4 /WX /Ox /Os /Oy- /D _WIN64 /D _AMD64_ /D AMD64 /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Fo"D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\\" /Fd"D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\vc120.pdb" /Gz /wd4100 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files (x86)\Windows Kits\8.1\Include\Shared\warning.h" /errorReport:prompt /kernel -cbstring -d2epilogunwind  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ allocator.c hash_table.c "key-record.c" "process-db.c" reghider.c "registry-callback.c" "string-hash-table.c" "um-services.c" "utils-dym-array.c"
+         allocator.c
+         hash_table.c
+         key-record.c
+         process-db.c
+         reghider.c
+         registry-callback.c
+         string-hash-table.c
+         um-services.c
+         utils-dym-array.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Konference\HackerFest 2015\bin\x64\Release\reghider.sys" /VERSION:"6.3" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\Konference\HackerFest 2015\lib\x64\Release" /LIBPATH:"D:\Konference\HackerFest 2015\lib\x64" /LIBPATH:..\lib\x64\Release /LIBPATH:..\lib\x64 /WX /SECTION:"INIT,d" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x64\fltmgr.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x64\BufferOverflowK.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x64\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x64\hal.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x64\wmilib.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"D:\Konference\HackerFest 2015\bin\x64\Release\reghider.pdb" /SUBSYSTEM:NATIVE,"6.01" /Driver /OPT:REF /OPT:ICF /ENTRY:"GsDriverEntry" /RELEASE /IMPLIB:"D:\Konference\HackerFest 2015\bin\x64\Release\reghider.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X64 /PROFILE /INTEGRITYCHECK /INTEGRITYCHECK /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218,4218,4235 /osversion:6.3 /pdbcompress /debugtype:pdata "D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\allocator.obj"
+         "D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\hash_table.obj"
+         "D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\key-record.obj"
+         "D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\process-db.obj"
+         "D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\reghider.obj"
+         "D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\registry-callback.obj"
+         "D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\string-hash-table.obj"
+         "D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\um-services.obj"
+         "D:\Konference\HackerFest 2015\tmp\reghider\x64\Release\utils-dym-array.obj"
+         reghider.vcxproj -> D:\Konference\HackerFest 2015\bin\x64\Release\reghider.sys
+     1>Done Building Project "D:\Konference\HackerFest 2015\reghider\reghider.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.48

@@ -1,0 +1,16 @@
+﻿Build started 30. 9. 2015 19:43:17.
+     1>Project "D:\Konference\HackerFest 2015\dllreghider\dllreghider.vcxproj" on node 3 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I..\include /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D DLLREGHIDER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\Konference\HackerFest 2015\tmp\dllreghider\x64\Release\\" /Fd"D:\Konference\HackerFest 2015\tmp\dllreghider\x64\Release\vc120.pdb" /Gd /TC /wd4100 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /errorReport:prompt dllreghider.c
+         dllreghider.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Konference\HackerFest 2015\bin\x64\Release\dllreghider.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\Konference\HackerFest 2015\lib\x64\Release" /LIBPATH:"D:\Konference\HackerFest 2015\lib\x64" /LIBPATH:..\lib\x64\Release /LIBPATH:..\lib\x64 libreghider.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Konference\HackerFest 2015\bin\x64\Release\dllreghider.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Konference\HackerFest 2015\bin\x64\Release\dllreghider.lib" /MACHINE:X64 /DLL "D:\Konference\HackerFest 2015\tmp\dllreghider\x64\Release\dllreghider.obj"
+            Creating library D:\Konference\HackerFest 2015\bin\x64\Release\dllreghider.lib and object D:\Konference\HackerFest 2015\bin\x64\Release\dllreghider.exp
+         Generating code
+         Finished generating code
+         dllreghider.vcxproj -> D:\Konference\HackerFest 2015\bin\x64\Release\dllreghider.dll
+     1>Done Building Project "D:\Konference\HackerFest 2015\dllreghider\dllreghider.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.68

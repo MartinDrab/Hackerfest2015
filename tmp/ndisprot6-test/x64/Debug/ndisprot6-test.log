@@ -1,0 +1,16 @@
+﻿Build started 27. 9. 2015 20:56:34.
+     1>Project "D:\Konference\HackerFest 2015\ndisprot6-test\ndisprot6-test.vcxproj" on node 4 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I..\ndisprot6 /I..\include /Zi /nologo /W3 /WX- /Od /D DBG /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\Konference\HackerFest 2015\tmp\ndisprot6-test\x64\Debug\\" /Fd"D:\Konference\HackerFest 2015\tmp\ndisprot6-test\x64\Debug\vc120.pdb" /Gd /TC /errorReport:prompt prottest.c
+         prottest.c
+     1>prottest.c(176): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>prottest.c(260): warning C4267: 'initializing' : conversion from 'size_t' to 'INT', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Konference\HackerFest 2015\bin\x64\Debug\ndisprot6-test.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Konference\HackerFest 2015\lib\x64\Debug" /LIBPATH:"D:\Konference\HackerFest 2015\lib\x64" /LIBPATH:..\lib\x64\Debug /LIBPATH:..\lib\x64 Ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Konference\HackerFest 2015\bin\x64\Debug\ndisprot6-test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Konference\HackerFest 2015\bin\x64\Debug\ndisprot6-test.lib" /MACHINE:X64 "D:\Konference\HackerFest 2015\tmp\ndisprot6-test\x64\Debug\prottest.obj"
+         ndisprot6-test.vcxproj -> D:\Konference\HackerFest 2015\bin\x64\Debug\ndisprot6-test.exe
+     1>Done Building Project "D:\Konference\HackerFest 2015\ndisprot6-test\ndisprot6-test.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.26

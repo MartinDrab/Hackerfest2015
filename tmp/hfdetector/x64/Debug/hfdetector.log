@@ -1,0 +1,17 @@
+﻿Build started 22. 9. 2015 2:57:17.
+     1>Project "D:\Konference\HackerFest 2015\hfdetector\hfdetector.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I..\include /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\Konference\HackerFest 2015\tmp\hfdetector\x64\Debug\\" /Fd"D:\Konference\HackerFest 2015\tmp\hfdetector\x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt hfdetector.cpp
+         hfdetector.cpp
+     1>hfdetector.cpp(14): warning C4267: 'argument' : conversion from 'size_t' to 'const USHORT', possible loss of data
+     1>hfdetector.cpp(16): warning C4267: 'argument' : conversion from 'size_t' to 'const USHORT', possible loss of data
+     1>hfdetector.cpp(19): warning C4267: 'argument' : conversion from 'size_t' to 'const USHORT', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Konference\HackerFest 2015\bin\x64\Debug\hfdetector.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Konference\HackerFest 2015\lib\x64\Debug" /LIBPATH:"D:\Konference\HackerFest 2015\lib\x64" /LIBPATH:..\lib\x64\Debug /LIBPATH:..\lib\x64 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Konference\HackerFest 2015\bin\x64\Debug\hfdetector.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Konference\HackerFest 2015\bin\x64\Debug\hfdetector.lib" /MACHINE:X64 "D:\Konference\HackerFest 2015\tmp\hfdetector\x64\Debug\hfdetector.obj"
+         "D:\Konference\HackerFest 2015\tmp\hfdetector\x64\Debug\utils.obj"
+         hfdetector.vcxproj -> D:\Konference\HackerFest 2015\bin\x64\Debug\hfdetector.exe
+     1>Done Building Project "D:\Konference\HackerFest 2015\hfdetector\hfdetector.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.46
