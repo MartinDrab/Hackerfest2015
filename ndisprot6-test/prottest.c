@@ -328,10 +328,10 @@ void InitIPHeader(PIPV4_HDR Header, char *SourceAddress, const char *DestAddress
 	Header->ip_tos = 0;
 	Header->ip_checksum = 0;
 	Header->ip_totallength = htons(TotalLength);
-	Header->ip_ttl = 36;
+	Header->ip_ttl = 128;
 	Header->ip_srcaddr = inet_addr(SourceAddress);
 	Header->ip_destaddr = inet_addr(DestAddress);
-//	Header->ip_checksum = htons(checksum((unsigned short *)Header, sizeof(IPV4_HDR)));
+	Header->ip_offset = 0;
 
 	return;
 }
@@ -346,7 +346,7 @@ void InitIcmpHeader(char *buf, const char *Data, int datasize)
 	icmp_hdr->icmp_code = 0;
 	icmp_hdr->icmp_id = (USHORT)GetCurrentProcessId();
 	icmp_hdr->icmp_checksum = 0;
-	icmp_hdr->icmp_sequence = 0;
+	icmp_hdr->icmp_sequence = htons(1);
 	icmp_hdr->icmp_timestamp = GetTickCount();
 	datapart = buf + sizeof(ICMP_HDR);
 	memcpy(datapart, Data, datasize);

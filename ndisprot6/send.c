@@ -236,7 +236,7 @@ Return Value:
         pNetBufferList->SourceHandle = pOpenContext->BindingHandle;
         ASSERT (NDIS_MDL_LINKAGE(pMdl) == NULL);
         
-        SendFlags |= NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK;
+//        SendFlags |= NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK;
 
         NdisSendNetBufferLists(        
                         pOpenContext->BindingHandle,
